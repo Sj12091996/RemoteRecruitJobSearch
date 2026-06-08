@@ -11,7 +11,7 @@ import SwiftUI
 struct RemoteRecruitApp: App {
     var body: some Scene {
         WindowGroup {
-            JobListView()
+            JobListView() // Root view — app launches directly into the job list
         }
     }
 }

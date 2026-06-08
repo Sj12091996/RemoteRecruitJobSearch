@@ -7,10 +7,12 @@
 
 import Foundation
 
+// Abstraction over the API layer — makes it easy to swap in a mock during tests
 protocol JobServiceProtocol {
     func fetchJobs(search: String?) async throws -> [Job]
 }
 
+// Covers the failure cases we can reasonably expect from a network call
 enum NetworkError: LocalizedError {
     case invalidURL
     case decodingFailed
@@ -49,6 +51,7 @@ class JobService: JobServiceProtocol {
             let decoded = try JSONDecoder().decode(JobsResponse.self, from: data)
             return decoded.jobs
         } catch let error as NetworkError {
+            // Re-throw our own errors as-is so they aren't double-wrapped
             throw error
         } catch is DecodingError {
             throw NetworkError.decodingFailed

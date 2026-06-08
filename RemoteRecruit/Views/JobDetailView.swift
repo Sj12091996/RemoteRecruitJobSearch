@@ -144,6 +144,8 @@ struct FlowLayout: View {
 
 // MARK: - HTML Strip Extension
 extension String {
+    // Removes HTML tags from job descriptions returned by the Remotive API.
+    // Tries NSAttributedString first for accurate parsing; falls back to regex if that fails.
     var strippedHTML: String {
         guard let data = self.data(using: .utf8) else { return self }
         let options: [NSAttributedString.DocumentReadingOptionKey: Any] = [

@@ -7,6 +7,7 @@
 
 import Foundation
 
+// Maps directly to the JSON shape returned by the Remotive API
 struct Job: Identifiable, Decodable {
     let id: Int
     let title: String

@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// Single row in the job list — shows the key details at a glance
 struct JobRowView: View {
     
     let job: Job

@@ -7,11 +7,12 @@
 
 import Foundation
 
+// Drives the UI — views switch on this to show the right screen
 enum ViewState {
-    case idle
-    case loading
-    case success
-    case empty
+    case idle        // initial state, nothing fetched yet
+    case loading     // network request in flight
+    case success     // jobs loaded and visible
+    case empty       // request succeeded but no results matched
     case error(String)
 }
 
@@ -31,6 +32,7 @@ class JobListViewModel: ObservableObject {
         self.service = service
     }
     
+    // Fetches the full job list and hands off to filterJobs()
     func loadJobs() async {
         viewState = .loading
         do {
@@ -42,6 +44,7 @@ class JobListViewModel: ObservableObject {
         }
     }
     
+    // Filters allJobs by title or company name against the current search query.
     // Client-side filtering — works reliably unlike the API's search param
     private func filterJobs() {
         let query = searchText.trimmingCharacters(in: .whitespaces).lowercased()
