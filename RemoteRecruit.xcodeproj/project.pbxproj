@@ -19,10 +19,19 @@
 		150214642FD6CB0300C22D21 /* JobListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150214632FD6CB0300C22D21 /* JobListViewModel.swift */; };
 		150214672FD6D03300C22D21 /* StateViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150214662FD6D03300C22D21 /* StateViews.swift */; };
 		1502146F2FD6D6B700C22D21 /* RemoteRecruitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1502146E2FD6D6B700C22D21 /* RemoteRecruitTests.swift */; };
+		150214832FD724D000C22D21 /* RemoteRecruitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150214822FD724D000C22D21 /* RemoteRecruitUITests.swift */; };
+		150214852FD724D000C22D21 /* RemoteRecruitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150214842FD724D000C22D21 /* RemoteRecruitUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		150214702FD6D6B700C22D21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1502143A2FD6C94000C22D21 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 150214412FD6C94000C22D21;
+			remoteInfo = RemoteRecruit;
+		};
+		150214862FD724D000C22D21 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1502143A2FD6C94000C22D21 /* Project object */;
 			proxyType = 1;
@@ -46,6 +55,9 @@
 		150214662FD6D03300C22D21 /* StateViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateViews.swift; sourceTree = "<group>"; };
 		1502146C2FD6D6B700C22D21 /* RemoteRecruitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemoteRecruitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1502146E2FD6D6B700C22D21 /* RemoteRecruitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteRecruitTests.swift; sourceTree = "<group>"; };
+		150214802FD724D000C22D21 /* RemoteRecruitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemoteRecruitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		150214822FD724D000C22D21 /* RemoteRecruitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteRecruitUITests.swift; sourceTree = "<group>"; };
+		150214842FD724D000C22D21 /* RemoteRecruitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteRecruitUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +75,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1502147D2FD724D000C22D21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -71,6 +90,7 @@
 			children = (
 				150214442FD6C94000C22D21 /* RemoteRecruit */,
 				1502146D2FD6D6B700C22D21 /* RemoteRecruitTests */,
+				150214812FD724D000C22D21 /* RemoteRecruitUITests */,
 				150214432FD6C94000C22D21 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,6 +100,7 @@
 			children = (
 				150214422FD6C94000C22D21 /* RemoteRecruit.app */,
 				1502146C2FD6D6B700C22D21 /* RemoteRecruitTests.xctest */,
+				150214802FD724D000C22D21 /* RemoteRecruitUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -150,6 +171,15 @@
 			path = RemoteRecruitTests;
 			sourceTree = "<group>";
 		};
+		150214812FD724D000C22D21 /* RemoteRecruitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				150214822FD724D000C22D21 /* RemoteRecruitUITests.swift */,
+				150214842FD724D000C22D21 /* RemoteRecruitUITestsLaunchTests.swift */,
+			);
+			path = RemoteRecruitUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -188,6 +218,24 @@
 			productReference = 1502146C2FD6D6B700C22D21 /* RemoteRecruitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		1502147F2FD724D000C22D21 /* RemoteRecruitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 150214882FD724D000C22D21 /* Build configuration list for PBXNativeTarget "RemoteRecruitUITests" */;
+			buildPhases = (
+				1502147C2FD724D000C22D21 /* Sources */,
+				1502147D2FD724D000C22D21 /* Frameworks */,
+				1502147E2FD724D000C22D21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				150214872FD724D000C22D21 /* PBXTargetDependency */,
+			);
+			name = RemoteRecruitUITests;
+			productName = RemoteRecruitUITests;
+			productReference = 150214802FD724D000C22D21 /* RemoteRecruitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -202,6 +250,10 @@
 						CreatedOnToolsVersion = 13.2;
 					};
 					1502146B2FD6D6B600C22D21 = {
+						CreatedOnToolsVersion = 13.2;
+						TestTargetID = 150214412FD6C94000C22D21;
+					};
+					1502147F2FD724D000C22D21 = {
 						CreatedOnToolsVersion = 13.2;
 						TestTargetID = 150214412FD6C94000C22D21;
 					};
@@ -222,6 +274,7 @@
 			targets = (
 				150214412FD6C94000C22D21 /* RemoteRecruit */,
 				1502146B2FD6D6B600C22D21 /* RemoteRecruitTests */,
+				1502147F2FD724D000C22D21 /* RemoteRecruitUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -237,6 +290,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1502146A2FD6D6B600C22D21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1502147E2FD724D000C22D21 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -270,6 +330,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1502147C2FD724D000C22D21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				150214832FD724D000C22D21 /* RemoteRecruitUITests.swift in Sources */,
+				150214852FD724D000C22D21 /* RemoteRecruitUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -277,6 +346,11 @@
 			isa = PBXTargetDependency;
 			target = 150214412FD6C94000C22D21 /* RemoteRecruit */;
 			targetProxy = 150214702FD6D6B700C22D21 /* PBXContainerItemProxy */;
+		};
+		150214872FD724D000C22D21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 150214412FD6C94000C22D21 /* RemoteRecruit */;
+			targetProxy = 150214862FD724D000C22D21 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -410,6 +484,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -438,6 +513,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -487,6 +563,38 @@
 			};
 			name = Release;
 		};
+		150214892FD724D000C22D21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sourabhjaiswal146-gmail.com.RemoteRecruitUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RemoteRecruit;
+			};
+			name = Debug;
+		};
+		1502148A2FD724D000C22D21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sourabhjaiswal146-gmail.com.RemoteRecruitUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RemoteRecruit;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -513,6 +621,15 @@
 			buildConfigurations = (
 				150214722FD6D6B700C22D21 /* Debug */,
 				150214732FD6D6B700C22D21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		150214882FD724D000C22D21 /* Build configuration list for PBXNativeTarget "RemoteRecruitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				150214892FD724D000C22D21 /* Debug */,
+				1502148A2FD724D000C22D21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

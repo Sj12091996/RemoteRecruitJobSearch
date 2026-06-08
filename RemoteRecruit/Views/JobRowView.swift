@@ -44,6 +44,7 @@ struct JobRowView: View {
                     .clipShape(Capsule())
             }
         }
+        .accessibilityIdentifier("jobRow")
         .padding(.vertical, 6)
     }
 }

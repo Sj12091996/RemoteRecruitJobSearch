@@ -54,6 +54,7 @@ struct JobDetailView: View {
                 VStack(alignment: .leading, spacing: 8) {
                     Text("Job Description")
                         .font(.headline)
+                        .accessibilityIdentifier("jobDescriptionTitle")
                     
                     // Strip basic HTML tags for display
                     Text(viewModel.description.strippedHTML)

@@ -49,6 +49,7 @@ struct JobListView: View {
                 JobRowView(job: job)
             }
         }
+        .accessibilityIdentifier("jobList")
         .listStyle(.plain)
     }
 }
